@@ -75,7 +75,25 @@ var page_attrs = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 var page_mts = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 var pages = [
-'This file is only here for reference.',
+'== Use with Internet Explorer\n\
+\n\
+Internet Explorer (testing only with IE11) can load and save Woas files, and it will run as a trusted application on Windows by changing this or any Woas file\'s extension from {{{.html}}} to {{{.hta}}}. This is a non-ideal solution (IE will likely disappear someday and is somewhat limited) but works well and has a proven track record.\n\
+\\\n\
+== Other browsers\n\
+\n\
+Any other browser should be able to open a Woas 2 file if it has JavaScript enabled, but without a browser extension or a Woas 2 server it will not be able to save changes. As mentioned, a limited extension will be available for Firefox early on, and I\'ll look into an extension for Chromium-based browsers, especially Edge, once basic functionality has been reached, but I believe my time will be better spent working on a local/cloud server that works well with all browsers, works on all supported platforms, and uses Git fairly transparently for version control and distribution.\n\
+\\\n\
+== Toward a Woas 2 All-Browsers Solution\n\
+\n\
+It should be possible to use GitHub files directly so that Woas 2 can load Woas and WSIF files from any Github account using any browser. This will obviate the need for servers. The same might be done with various other services too.\n\
+\n\
+If such a solution is unwieldy or unworkable, I will be developing a local/cloud server for accessing, editing, and saving Woas files and sharing them with others. This is likely to be written for Linux, using WSL or a virtual machine on Windows as needed. It will probably use [[https://nodejs.org/|Node.js]] or [[https://deno.land/|Deno]] eventually and list available Woas files and access rights for that user and that collection.\n\
+\n\
+More research is needed, especially given applications like [[https://www.electronjs.org|Electron]] and [[https://nwjs.io|NW.js]] to be evaluated, both using Node.js; it took minutes to add NW.js file-saving support to Woas 1, while Deno promises a simple, single-file install, but possibly no embedded browser. My main focus is on leaving a good, working Woas behind me as I go on to develop a new project, a Woas that most people can install quite easily.\n\
+\n\
+Your thoughts on all this are welcome.\n\
+\n\
+Paul pvhl, December 23, 2020.',
 '[[Main Page]]\n\
 [[Special::Options|Options]]\n\
 \n\
@@ -8947,7 +8965,7 @@ woas.i18n = {
 	PWD_QUERY: "Please enter a password.",
 	READ_ONLY: "This WoaS is read-only.",
 	SAVE_ERROR: "Unable to save the '%s' file.",
-	SERVER_MODE: "This WoaS is not a local file; changes can only be saved to a local copy of the wiki. Please save this file if you want to make changes.\n\nNone of the changes made to this copy of WoaS will be saved.",
+	SERVER_MODE: "This WoaS is not a local file; changes can only be saved to a local copy of the wiki. Please save this file locally if you want to make changes.\n\nNone of the changes made to this copy of WoaS will be saved.",
 	STATIC_NOT_FOUND: "Static page '%s' not found!",
 	T1: "XHTML transclusion:",
 	T2: "Raw transclusion:",
