@@ -19,6 +19,6 @@ I'll be developing a final Woas here while moving on to my new, as-yet-unpublish
 
 * Fourth and final version (2.3) will add a few Woas 2 page apps (Journal, Passwords, To-do lists, etc.), throw in some new macros, and complete work on the help/tutorial plugin and content.
 
-* I am working on starting a related project called SHOWER: Social Heuristics Optimizing World Environment Realizer (not yet online). Shower is my priority, but much of this Woas completion work will be of use in Shower, I hope.
+* I am working on starting a related project called SHOWER: Social Heuristics Optimizing World Environment Reifier (not yet online). Shower is my priority, but much of this Woas completion work will be of use in Shower, I hope.
 
 Cheers, Paul pvhl.
